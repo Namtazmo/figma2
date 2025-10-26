@@ -1,10 +1,91 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 /* chuyển đơn vị từ rem sang px*/
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  height: 10000px;
+}
+/* common-phần chung  */
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    line-height: 50px;
+    padding: 0px 16px;
+    color: #fff;
     font-size: 1.6rem;
-} 
+    font-weight: 600   ;
+    border-radius: 24.8px;
+    text-align: center;
+    background: #000;
+
+
+}
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  margin: 0 auto;
+  /* ngăn không cho đụng lề */
+  max-width: calc(100% - 48px);
+}
+/* header .body của header*/
+.header{
+    background: #FFFCF4;
+}
+.header.fixed{
+position: sticky;
+top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0px 8px;
+
+}
+/* căn ngang nav */
+.nav ul {
+  display: flex;
+}
+/* căn trái nav (btn phía sau nav cùng thẻ cha body nên bị căn theo)*/
+.nav {
+  margin-left: auto;
+  position: relative;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  /* margin: 8px 21px; */
+}
+.nav a:hover,.nav li.active a {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after{
+    display: block;
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: #171100;
+   position: absolute;
+   left: 20px;
+   bottom: 6px;
+   border-radius: 1px;
+}
+.header .btn-sign-up{
+    min-width: 144px;
+    color: yellow;
+}
+.header .btn-sign-up:hover{
+background: #2A7B9B;
+background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+ .header .action{margin-left: 49px;}
