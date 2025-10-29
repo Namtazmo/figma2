@@ -257,3 +257,47 @@ margin-right: 15px;
   bottom: 58px;
   right: 0px;
 }
+/* ++=======================popular====================== */
+.head-popular{
+  padding-top: 160px;
+  /* background: #FFB900; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-popular .heading{
+color: #171100;
+font-family: Sen;
+font-size: 3.8rem;
+font-weight: 700;
+line-height: 1.26
+letter-spacing: -0.76px;
+
+}
+.head-popular .desc{
+  color: #5F5B53;
+font-size: 1.8rem
+line-height: 1.67;
+margin-top: 16px;
+}
+.head-popular .right-heead-popular {
+  gap: 14px;
+  /* width: 61%; */
+}
+.head-popular .left-head-popular{
+  width: 39%;
+
+}
+.head-popular .right-heead-popular .control{
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  stroke-width: 1px;
+stroke: #FFB900;
+border: 1px solid #FFB900;
+}
+.head-popular .right-heead-popular .control:nth-child(2){
+  background-color: #FFB900;
+}
